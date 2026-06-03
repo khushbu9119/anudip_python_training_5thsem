@@ -35,7 +35,7 @@ if (a + b > c) and (a + c > b) and (b + c > a):
 
         # Obtuse Isosceles
         else:
-            print("Obtuse Isosceles Triangle")
+            print("Obtuse Isosceles Triangle ")
 
     else:
         print("It is a Scalene Triangle")
