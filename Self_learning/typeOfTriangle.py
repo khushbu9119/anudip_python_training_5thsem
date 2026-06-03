@@ -25,8 +25,17 @@ if (a + b > c) and (a + c > b) and (b + c > a):
     if (a == b == c):
         print("It is an Equilateral Triangle")
 
-    elif( a == b or b == c or a == c):
-        print("It is an Isosceles Triangle")
+    if( a == b or b == c or a == c):
+        if (a*a + b*b == c*c) or (a*a + c*c == b*b) or (b*b + c*c == a*a):
+            print("Right Isosceles Triangle")
+
+        # Acute Isosceles
+        elif (a*a + b*b > c*c) and (a*a + c*c > b*b) and (b*b + c*c > a*a):
+            print("Acute Isosceles Triangle")
+
+        # Obtuse Isosceles
+        else:
+            print("Obtuse Isosceles Triangle")
 
     else:
         print("It is a Scalene Triangle")
