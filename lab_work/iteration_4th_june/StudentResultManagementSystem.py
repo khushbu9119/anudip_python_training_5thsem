@@ -1,6 +1,9 @@
 # Student Result Management System
+
 total = 0
 fail_count = 0
+
+# Get marks for 5 subjects
 
 for i in range(1, 6):
     marks = int(input(f"Enter marks of Subject {i}: "))
@@ -9,8 +12,11 @@ for i in range(1, 6):
 
     if marks < 40:
         fail_count += 1
+# Calculate percentage and grade
 
 percentage = total / 5
+
+# Determine grade based on percentage
 
 if percentage >= 90:
     grade = "A+"
@@ -26,7 +32,9 @@ elif percentage >= 40:
 
 else:
     grade = "Fail"
+
 # Display the results
+
 print("Total Marks:", total)
 print("Percentage:", percentage)
 print("Grade:", grade)
