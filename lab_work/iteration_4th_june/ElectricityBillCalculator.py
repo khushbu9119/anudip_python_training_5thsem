@@ -14,6 +14,7 @@ elif units <= 200:
 else:
     bill = (100 * 5) + (100 * 7) + ((units - 200) * 10)        # Calculate bill for units above 200
     category = "High Consumption"
+    
 # Display the results
 print("Units Consumed:", units)
 print("Total Bill: ₹", bill)
