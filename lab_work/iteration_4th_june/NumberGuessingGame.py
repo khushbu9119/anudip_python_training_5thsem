@@ -1,3 +1,4 @@
+# Number Guessing Game
 secret_number = 42
 guess = None
 while (guess != secret_number):
