@@ -6,4 +6,4 @@ while(charging_level<=100):
         charging_level=charging_level + 12
    
 
-print("full charged")
+print("full charged..")
