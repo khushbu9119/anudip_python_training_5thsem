@@ -24,7 +24,7 @@ for i in transactions:
 print("Total Deposits:", deposit_count)
 print("Total Withdrawals:", withdrawal_count)
 
-# Find the largest deposit and largest withdrawal
+# Find the largest deposit and largest withdrawal  
 
 for i in transactions:
 
@@ -36,7 +36,7 @@ for i in transactions:
         largest_withdrawal = i
 
 print("Largest Deposit:", largest_deposit)
-print("Largest Withdrawal:", largest_withdrawal)
+print("Largest Withdrawal :", largest_withdrawal)
 
 # Create separate lists for deposits and withdrawals
 
