@@ -4,8 +4,6 @@ seats = [1, 0, 1, 1, 0, 0, 1, 1, 1, 0]
 booked = 0
 available = 0
 
-# List for available seat numbers
-available_seats = []
 
 # Count booked and available seats
 
@@ -26,7 +24,7 @@ for i in range(len(seats)):
         break
 
 # Create list of all available seat numbers
-
+available_seats = []
 for i in range(len(seats)):
     if seats[i] == 0:
         available_seats.append(i + 1)
