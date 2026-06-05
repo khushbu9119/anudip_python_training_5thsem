@@ -12,7 +12,7 @@ max_score = player_score[0]
 for index in range(1, len(player_score)):
     if player_score[index] > max_score:
         max_score = player_score[index]
-print("The highest score is: ", max_score)
+print("The highest score is:  ", max_score)
 
 
 
