@@ -26,9 +26,6 @@ print("Total Withdrawals:", withdrawal_count)
 
 # Find the largest deposit and largest withdrawal
 
-largest_deposit = transactions[0]
-largest_withdrawal = transactions[1]
-
 for i in transactions:
 
     if i > largest_deposit:
