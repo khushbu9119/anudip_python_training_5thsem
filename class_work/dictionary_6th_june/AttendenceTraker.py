@@ -4,7 +4,7 @@ attendance = {}
 
 # Input attendance of 30 students
 
-for i in range(30):
+for i in range(5):
 
     roll = int(input("Enter Roll Number : "))
     status = input("Enter Attendance (Present/Absent) : ")
@@ -19,5 +19,5 @@ print("Students who are Present")
 
 for roll in attendance:
 
-    if attendance[roll] == "Present":
+    if attendance[roll].lower() == "present":
         print("Roll Number :", roll)
