@@ -104,10 +104,10 @@ for passenger in bookings:
     elif passenger[1] == "Chennai":
         chennai += 1
 
-if delhi > mumbai and delhi > chennai:
+if (delhi > mumbai and delhi > chennai):
     print("Highest bookings destination : Delhi")
 
-elif mumbai > delhi and mumbai > chennai:
+elif (mumbai > delhi and mumbai > chennai):
     print("Highest bookings destination : Mumbai")
 
 else:
