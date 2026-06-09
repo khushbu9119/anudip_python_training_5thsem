@@ -14,8 +14,7 @@ if shape == "Rectangle":
     # display area and perimeter of rectangle
     print("Area of Rectangle : ", rect_area, "sq.cm")
     print("Perimeter of Rectangle : ", rect_perimeter, "cm")
-
-print("________________________")
+    print("________________________")
 if shape == "Circle":
     # Circle Area and Circumference
     radius = int(input("Enter radius of circle (in CM) : "))
@@ -25,7 +24,7 @@ if shape == "Circle":
     circle_circumference = AreaCalculator.calculate_circumference(radius)
     print("Area of Circle : ", circle_area, "sq.cm")
     print("Circumference of Circle : ", circle_circumference, "cm")
-print("________________________________")
+    print("________________________________")
 
 if shape =="Square":
     # Square Area and Perimeter
@@ -36,8 +35,7 @@ if shape =="Square":
     square_perimeter = AreaCalculator.calculate_square_perimeter(side)
     print("Area of Square : ", square_area, "sq.cm")
     print("Perimeter of Square : ", square_perimeter, "cm")
-
-print("________________________")
+    print("________________________")
 
 if shape == "Rigthangle Triangle":
     #Right angle triangle area
@@ -47,7 +45,7 @@ if shape == "Rigthangle Triangle":
         exit("Base and height cannot be negative.")
     rightangle_triangle_area = AreaCalculator.calculate_Rightangle_triangle_area(base, height)
     print("Area of Right Angle Triangle : ", rightangle_triangle_area, "sq.cm")
-print("________________________")
+    print("________________________")
 
 if shape == "Triangle":
     # Triangle Area and Perimeter
@@ -60,7 +58,7 @@ if shape == "Triangle":
     triangle_perimeter = AreaCalculator.calculate_triangle_perimeter(side1, side2, side3)   
     print("Area of Triangle : ", triangle_area, "sq.cm")
     print("Perimeter of Triangle : ", triangle_perimeter, "cm")
-print("______________________________")
+    print("______________________________")
 
 
 
