@@ -35,7 +35,7 @@ def calculate_square_perimeter(side):
     perimeter = 4 * side
     #return the calculated perimeter
     return perimeter
-#Triangle Area Calculator
+#Right Triangle Area Calculator
 def calculate_Rightangle_triangle_area(base, height):
     #calculate area
     area = 0.5 * base * height
