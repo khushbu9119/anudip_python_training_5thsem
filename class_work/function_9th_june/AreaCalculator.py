@@ -1,10 +1,10 @@
+
 #Rectangular Area Calculator
 def calculate_area(length, breadth):
     #calculate area
     area = length * breadth
     #return the calculated area
     return area
-#---------------------------------------------
 #Rectangular Perimeter Calculator
 def calculate_perimeter(length, breadth):
     #calculate perimeter
@@ -55,4 +55,6 @@ def calculate_triangle_area(side1, side2, side3):
     area = (s * (s - side1) * (s - side2) * (s - side3)) ** 0.5
     #return the calculated area
     return area
+
+#
 
