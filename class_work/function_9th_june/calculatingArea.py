@@ -3,8 +3,7 @@ import AreaCalculator
 
 # INPUT THE CHOISE
 choise = input("ENTER CHOISE : ")
-choise=choise.lower()
-
+print("____________________")
 # AREA OF RECTANGLE
 if choise == "Rectangle":
     length = int(input("Enter length of rectangle (in CM) : "))
@@ -72,11 +71,9 @@ if choise == "Triangle":
     print("Perimeter of Triangle : ", triangle_perimeter, "cm")
     print("______________________________")
 
-# EXIT
 
-if choise == "exit":
-    exit("Want to exit")
-    print("___________________")
+
+
 
 
 
