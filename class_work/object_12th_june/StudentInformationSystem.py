@@ -1,5 +1,5 @@
 class Student:
-    def __init__(self,studentName, rollNo, marks)
+    def __init__(self,studentName, rollNo, marks):
         self.studentName = studentName
         self.rollNo = rollNo
         self.marks = marks
@@ -12,7 +12,7 @@ class Student:
     def accept_roll_no(self):
         self.roll_no = int(input("Enter Roll Number: "))
         if self.roll_no > 0:
-            break
+            exit()
         else:
             print("Invalid Roll Number! Roll Number must be positive.")
     # accept marks
@@ -37,17 +37,57 @@ class Student:
         print("Marks      :", self.marks)
         print("Total Marks:", self.total)
         print("Percentage :", round(self.percentage, 2), "%")
-    #create object of student class
-student = Student(studentName, rollNo, marks)
+
 #-------------------------------------------------------------------------------
 #-------------------------------------------------------------------------------
 #------- Main Program ----------------------------------------------------------
 #Ask the user to enter the account details
-name=input("Enter the Student's name: ")
-#to validate name input
-if name.isspace():
+# Validate name
+studentName = input("Enter Student Name: ")
+
+if studentName.strip() == "":
     exit("Name cannot be empty.")
-#
+
+# Validate roll number
+rollNo = int(input("Enter Roll Number: "))
+
+if rollNo <= 0:
+    exit("Invalid Roll Number! Roll Number must be positive.")
+
+# Accept marks
+marks = Student.accept_marks()      # if accept_marks is a class method
+
+
+# Create object
+student = Student(studentName, rollNo, marks)
+
+#menu driven program to perform various operations on the account
+while True:
+    print(" 1 . Name of student ")
+    print(" 2 Roll No of student")
+    print(" 3 Marks of student")
+    print(" 4 Total marks")
+    print(" 5 Persentage of student")
+    print(" 6 Exit")
+    choice=int(input("Select operation: "))
+    if choice == 1:
+        student.display_Student_info()
+    elif choice == 2:
+        student.accept_roll_no()
+    elif choice == 3:
+        student.accept_marks()
+    elif choice == 4:
+        student.calculate_total()
+    elif choice == 5:
+        student.calculate_percentage()
+    elif choice==5:
+        print("Thank you for using our services!")
+        break
+    else:
+        print("Invalid choice! Please try again.")
+    
+        
+
 
 
 
